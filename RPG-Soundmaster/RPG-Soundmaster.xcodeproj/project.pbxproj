@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7595180E1F86003F04F8 /* UIKit.framework */; };
+		AECB7598180E1F86003F04F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7597180E1F86003F04F8 /* Foundation.framework */; };
+		AECB759A180E1F86003F04F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7599180E1F86003F04F8 /* CoreGraphics.framework */; };
+		AECB75A0180E1F86003F04F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AECB759E180E1F86003F04F8 /* InfoPlist.strings */; };
+		AECB75A2180E1F86003F04F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75A1180E1F86003F04F8 /* main.m */; };
+		AECB75A6180E1F86003F04F8 /* INPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75A5180E1F86003F04F8 /* INPAppDelegate.m */; };
+		AECB75A8180E1F86003F04F8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AECB75A7180E1F86003F04F8 /* Default.png */; };
+		AECB75AA180E1F86003F04F8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECB75A9180E1F86003F04F8 /* Default@2x.png */; };
+		AECB75AC180E1F86003F04F8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECB75AB180E1F86003F04F8 /* Default-568h@2x.png */; };
+		AECB75AF180E1F86003F04F8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AECB75AD180E1F86003F04F8 /* MainStoryboard.storyboard */; };
+		AECB75B2180E1F86003F04F8 /* INPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75B1180E1F86003F04F8 /* INPViewController.m */; };
+		AECB75BA180E1F87003F04F8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB75B9180E1F87003F04F8 /* SenTestingKit.framework */; };
+		AECB75BB180E1F87003F04F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7595180E1F86003F04F8 /* UIKit.framework */; };
+		AECB75BC180E1F87003F04F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7597180E1F86003F04F8 /* Foundation.framework */; };
+		AECB75C4180E1F87003F04F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AECB75C2180E1F87003F04F8 /* InfoPlist.strings */; };
+		AECB75C7180E1F87003F04F8 /* RPG_SoundmasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AECB75BD180E1F87003F04F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AECB758A180E1F86003F04F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AECB7591180E1F86003F04F8;
+			remoteInfo = "RPG-Soundmaster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AECB7592180E1F86003F04F8 /* RPG-Soundmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG-Soundmaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECB7595180E1F86003F04F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AECB7597180E1F86003F04F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AECB7599180E1F86003F04F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AECB759D180E1F86003F04F8 /* RPG-Soundmaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPG-Soundmaster-Info.plist"; sourceTree = "<group>"; };
+		AECB759F180E1F86003F04F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AECB75A1180E1F86003F04F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AECB75A3180E1F86003F04F8 /* RPG-Soundmaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPG-Soundmaster-Prefix.pch"; sourceTree = "<group>"; };
+		AECB75A4180E1F86003F04F8 /* INPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INPAppDelegate.h; sourceTree = "<group>"; };
+		AECB75A5180E1F86003F04F8 /* INPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INPAppDelegate.m; sourceTree = "<group>"; };
+		AECB75A7180E1F86003F04F8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AECB75A9180E1F86003F04F8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AECB75AB180E1F86003F04F8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AECB75AE180E1F86003F04F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AECB75B0180E1F86003F04F8 /* INPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = INPViewController.h; sourceTree = "<group>"; };
+		AECB75B1180E1F86003F04F8 /* INPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = INPViewController.m; sourceTree = "<group>"; };
+		AECB75B8180E1F87003F04F8 /* RPG-SoundmasterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPG-SoundmasterTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECB75B9180E1F87003F04F8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AECB75C1180E1F87003F04F8 /* RPG-SoundmasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RPG-SoundmasterTests-Info.plist"; sourceTree = "<group>"; };
+		AECB75C3180E1F87003F04F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AECB75C5180E1F87003F04F8 /* RPG_SoundmasterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPG_SoundmasterTests.h; sourceTree = "<group>"; };
+		AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPG_SoundmasterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AECB758F180E1F86003F04F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */,
+				AECB7598180E1F86003F04F8 /* Foundation.framework in Frameworks */,
+				AECB759A180E1F86003F04F8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECB75B4180E1F87003F04F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECB75BA180E1F87003F04F8 /* SenTestingKit.framework in Frameworks */,
+				AECB75BB180E1F87003F04F8 /* UIKit.framework in Frameworks */,
+				AECB75BC180E1F87003F04F8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AECB7589180E1F86003F04F8 = {
+			isa = PBXGroup;
+			children = (
+				AECB759B180E1F86003F04F8 /* RPG-Soundmaster */,
+				AECB75BF180E1F87003F04F8 /* RPG-SoundmasterTests */,
+				AECB7594180E1F86003F04F8 /* Frameworks */,
+				AECB7593180E1F86003F04F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AECB7593180E1F86003F04F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AECB7592180E1F86003F04F8 /* RPG-Soundmaster.app */,
+				AECB75B8180E1F87003F04F8 /* RPG-SoundmasterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AECB7594180E1F86003F04F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AECB7595180E1F86003F04F8 /* UIKit.framework */,
+				AECB7597180E1F86003F04F8 /* Foundation.framework */,
+				AECB7599180E1F86003F04F8 /* CoreGraphics.framework */,
+				AECB75B9180E1F87003F04F8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AECB759B180E1F86003F04F8 /* RPG-Soundmaster */ = {
+			isa = PBXGroup;
+			children = (
+				AECB75A4180E1F86003F04F8 /* INPAppDelegate.h */,
+				AECB75A5180E1F86003F04F8 /* INPAppDelegate.m */,
+				AECB75AD180E1F86003F04F8 /* MainStoryboard.storyboard */,
+				AECB75B0180E1F86003F04F8 /* INPViewController.h */,
+				AECB75B1180E1F86003F04F8 /* INPViewController.m */,
+				AECB759C180E1F86003F04F8 /* Supporting Files */,
+			);
+			path = "RPG-Soundmaster";
+			sourceTree = "<group>";
+		};
+		AECB759C180E1F86003F04F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AECB759D180E1F86003F04F8 /* RPG-Soundmaster-Info.plist */,
+				AECB759E180E1F86003F04F8 /* InfoPlist.strings */,
+				AECB75A1180E1F86003F04F8 /* main.m */,
+				AECB75A3180E1F86003F04F8 /* RPG-Soundmaster-Prefix.pch */,
+				AECB75A7180E1F86003F04F8 /* Default.png */,
+				AECB75A9180E1F86003F04F8 /* Default@2x.png */,
+				AECB75AB180E1F86003F04F8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AECB75BF180E1F87003F04F8 /* RPG-SoundmasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				AECB75C5180E1F87003F04F8 /* RPG_SoundmasterTests.h */,
+				AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */,
+				AECB75C0180E1F87003F04F8 /* Supporting Files */,
+			);
+			path = "RPG-SoundmasterTests";
+			sourceTree = "<group>";
+		};
+		AECB75C0180E1F87003F04F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AECB75C1180E1F87003F04F8 /* RPG-SoundmasterTests-Info.plist */,
+				AECB75C2180E1F87003F04F8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AECB7591180E1F86003F04F8 /* RPG-Soundmaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECB75CA180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-Soundmaster" */;
+			buildPhases = (
+				AECB758E180E1F86003F04F8 /* Sources */,
+				AECB758F180E1F86003F04F8 /* Frameworks */,
+				AECB7590180E1F86003F04F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPG-Soundmaster";
+			productName = "RPG-Soundmaster";
+			productReference = AECB7592180E1F86003F04F8 /* RPG-Soundmaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AECB75B7180E1F87003F04F8 /* RPG-SoundmasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECB75CD180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-SoundmasterTests" */;
+			buildPhases = (
+				AECB75B3180E1F87003F04F8 /* Sources */,
+				AECB75B4180E1F87003F04F8 /* Frameworks */,
+				AECB75B5180E1F87003F04F8 /* Resources */,
+				AECB75B6180E1F87003F04F8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECB75BE180E1F87003F04F8 /* PBXTargetDependency */,
+			);
+			name = "RPG-SoundmasterTests";
+			productName = "RPG-SoundmasterTests";
+			productReference = AECB75B8180E1F87003F04F8 /* RPG-SoundmasterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AECB758A180E1F86003F04F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = INP;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = INpHELLer;
+			};
+			buildConfigurationList = AECB758D180E1F86003F04F8 /* Build configuration list for PBXProject "RPG-Soundmaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AECB7589180E1F86003F04F8;
+			productRefGroup = AECB7593180E1F86003F04F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AECB7591180E1F86003F04F8 /* RPG-Soundmaster */,
+				AECB75B7180E1F87003F04F8 /* RPG-SoundmasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AECB7590180E1F86003F04F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECB75A0180E1F86003F04F8 /* InfoPlist.strings in Resources */,
+				AECB75A8180E1F86003F04F8 /* Default.png in Resources */,
+				AECB75AA180E1F86003F04F8 /* Default@2x.png in Resources */,
+				AECB75AC180E1F86003F04F8 /* Default-568h@2x.png in Resources */,
+				AECB75AF180E1F86003F04F8 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECB75B5180E1F87003F04F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECB75C4180E1F87003F04F8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AECB75B6180E1F87003F04F8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AECB758E180E1F86003F04F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECB75A2180E1F86003F04F8 /* main.m in Sources */,
+				AECB75A6180E1F86003F04F8 /* INPAppDelegate.m in Sources */,
+				AECB75B2180E1F86003F04F8 /* INPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECB75B3180E1F87003F04F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECB75C7180E1F87003F04F8 /* RPG_SoundmasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AECB75BE180E1F87003F04F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AECB7591180E1F86003F04F8 /* RPG-Soundmaster */;
+			targetProxy = AECB75BD180E1F87003F04F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AECB759E180E1F86003F04F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECB759F180E1F86003F04F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AECB75AD180E1F86003F04F8 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECB75AE180E1F86003F04F8 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		AECB75C2180E1F87003F04F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AECB75C3180E1F87003F04F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AECB75C8180E1F87003F04F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AECB75C9180E1F87003F04F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AECB75CB180E1F87003F04F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
+				INFOPLIST_FILE = "RPG-Soundmaster/RPG-Soundmaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AECB75CC180E1F87003F04F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
+				INFOPLIST_FILE = "RPG-Soundmaster/RPG-Soundmaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AECB75CE180E1F87003F04F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPG-Soundmaster.app/RPG-Soundmaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
+				INFOPLIST_FILE = "RPG-SoundmasterTests/RPG-SoundmasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		AECB75CF180E1F87003F04F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPG-Soundmaster.app/RPG-Soundmaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
+				INFOPLIST_FILE = "RPG-SoundmasterTests/RPG-SoundmasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AECB758D180E1F86003F04F8 /* Build configuration list for PBXProject "RPG-Soundmaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECB75C8180E1F87003F04F8 /* Debug */,
+				AECB75C9180E1F87003F04F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECB75CA180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-Soundmaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECB75CB180E1F87003F04F8 /* Debug */,
+				AECB75CC180E1F87003F04F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AECB75CD180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-SoundmasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECB75CE180E1F87003F04F8 /* Debug */,
+				AECB75CF180E1F87003F04F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AECB758A180E1F86003F04F8 /* Project object */;
+}
