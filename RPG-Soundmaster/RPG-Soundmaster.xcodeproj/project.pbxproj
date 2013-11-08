@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A16D2666CC349E4A0E0C81D /* libPods-RPG-SoundmasterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4055B8250B584252BA7B4931 /* libPods-RPG-SoundmasterTests.a */; };
 		AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7595180E1F86003F04F8 /* UIKit.framework */; };
 		AECB7598180E1F86003F04F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7597180E1F86003F04F8 /* Foundation.framework */; };
 		AECB759A180E1F86003F04F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7599180E1F86003F04F8 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 		AECB75BC180E1F87003F04F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7597180E1F86003F04F8 /* Foundation.framework */; };
 		AECB75C4180E1F87003F04F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AECB75C2180E1F87003F04F8 /* InfoPlist.strings */; };
 		AECB75C7180E1F87003F04F8 /* RPG_SoundmasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */; };
+		AEE37CDD18174E6000798EA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86FC3FCE33E417E8BD65EC6 /* libPods.a */; };
+		AEE37CDE18174E6000798EA8 /* libPods-RPG-Soundmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57640172A7A545839AD630E3 /* libPods-RPG-Soundmaster.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38C22DE0CD594E13B3E98CF1 /* Pods-RPG-SoundmasterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPG-SoundmasterTests.xcconfig"; path = "Pods/Pods-RPG-SoundmasterTests.xcconfig"; sourceTree = "<group>"; };
+		3F914B44EA804C2099585D4A /* Pods-RPG-Soundmaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPG-Soundmaster.xcconfig"; path = "Pods/Pods-RPG-Soundmaster.xcconfig"; sourceTree = "<group>"; };
+		4055B8250B584252BA7B4931 /* libPods-RPG-SoundmasterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPG-SoundmasterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57640172A7A545839AD630E3 /* libPods-RPG-Soundmaster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RPG-Soundmaster.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C328F31D233447D89C5D0F0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		AECB7592180E1F86003F04F8 /* RPG-Soundmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPG-Soundmaster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECB7595180E1F86003F04F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AECB7597180E1F86003F04F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +66,7 @@
 		AECB75C3180E1F87003F04F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AECB75C5180E1F87003F04F8 /* RPG_SoundmasterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPG_SoundmasterTests.h; sourceTree = "<group>"; };
 		AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPG_SoundmasterTests.m; sourceTree = "<group>"; };
+		D86FC3FCE33E417E8BD65EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,8 @@
 				AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */,
 				AECB7598180E1F86003F04F8 /* Foundation.framework in Frameworks */,
 				AECB759A180E1F86003F04F8 /* CoreGraphics.framework in Frameworks */,
+				AEE37CDD18174E6000798EA8 /* libPods.a in Frameworks */,
+				AEE37CDE18174E6000798EA8 /* libPods-RPG-Soundmaster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,7 @@
 				AECB75BA180E1F87003F04F8 /* SenTestingKit.framework in Frameworks */,
 				AECB75BB180E1F87003F04F8 /* UIKit.framework in Frameworks */,
 				AECB75BC180E1F87003F04F8 /* Foundation.framework in Frameworks */,
+				1A16D2666CC349E4A0E0C81D /* libPods-RPG-SoundmasterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +103,9 @@
 				AECB75BF180E1F87003F04F8 /* RPG-SoundmasterTests */,
 				AECB7594180E1F86003F04F8 /* Frameworks */,
 				AECB7593180E1F86003F04F8 /* Products */,
+				9C328F31D233447D89C5D0F0 /* Pods.xcconfig */,
+				3F914B44EA804C2099585D4A /* Pods-RPG-Soundmaster.xcconfig */,
+				38C22DE0CD594E13B3E98CF1 /* Pods-RPG-SoundmasterTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +125,9 @@
 				AECB7597180E1F86003F04F8 /* Foundation.framework */,
 				AECB7599180E1F86003F04F8 /* CoreGraphics.framework */,
 				AECB75B9180E1F87003F04F8 /* SenTestingKit.framework */,
+				D86FC3FCE33E417E8BD65EC6 /* libPods.a */,
+				57640172A7A545839AD630E3 /* libPods-RPG-Soundmaster.a */,
+				4055B8250B584252BA7B4931 /* libPods-RPG-SoundmasterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AECB75CA180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-Soundmaster" */;
 			buildPhases = (
+				F27FB82326DA465D9084F9D0 /* Check Pods Manifest.lock */,
 				AECB758E180E1F86003F04F8 /* Sources */,
 				AECB758F180E1F86003F04F8 /* Frameworks */,
 				AECB7590180E1F86003F04F8 /* Resources */,
+				449178720404484986EA5612 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,10 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AECB75CD180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-SoundmasterTests" */;
 			buildPhases = (
+				6EB5FD1C061D47ADA0A09359 /* Check Pods Manifest.lock */,
 				AECB75B3180E1F87003F04F8 /* Sources */,
 				AECB75B4180E1F87003F04F8 /* Frameworks */,
 				AECB75B5180E1F87003F04F8 /* Resources */,
 				AECB75B6180E1F87003F04F8 /* ShellScript */,
+				07A06B19CF1B45F18901E75D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +273,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07A06B19CF1B45F18901E75D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RPG-SoundmasterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		449178720404484986EA5612 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RPG-Soundmaster-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB5FD1C061D47ADA0A09359 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AECB75B6180E1F87003F04F8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +330,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		F27FB82326DA465D9084F9D0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -381,28 +463,33 @@
 		};
 		AECB75CB180E1F87003F04F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F914B44EA804C2099585D4A /* Pods-RPG-Soundmaster.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
 				INFOPLIST_FILE = "RPG-Soundmaster/RPG-Soundmaster-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		AECB75CC180E1F87003F04F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F914B44EA804C2099585D4A /* Pods-RPG-Soundmaster.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
 				INFOPLIST_FILE = "RPG-Soundmaster/RPG-Soundmaster-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		AECB75CE180E1F87003F04F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C22DE0CD594E13B3E98CF1 /* Pods-RPG-SoundmasterTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPG-Soundmaster.app/RPG-Soundmaster";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -420,6 +507,7 @@
 		};
 		AECB75CF180E1F87003F04F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38C22DE0CD594E13B3E98CF1 /* Pods-RPG-SoundmasterTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RPG-Soundmaster.app/RPG-Soundmaster";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -454,6 +542,7 @@
 				AECB75CC180E1F87003F04F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AECB75CD180E1F87003F04F8 /* Build configuration list for PBXNativeTarget "RPG-SoundmasterTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +551,7 @@
 				AECB75CF180E1F87003F04F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

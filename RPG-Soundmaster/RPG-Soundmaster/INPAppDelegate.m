@@ -12,9 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    
-    
+//    
+//    [SCSoundCloud  setClientID:@"<Client ID>"
+//                        secret:@"<Client Secret>"
+//                   redirectURL:[NSURL URLWithString:@"<Redirect URL>"]];
+//    
     
     // Override point for customization after application launch.
     return YES;
