@@ -24,7 +24,6 @@
 		AECB75BC180E1F87003F04F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECB7597180E1F86003F04F8 /* Foundation.framework */; };
 		AECB75C4180E1F87003F04F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AECB75C2180E1F87003F04F8 /* InfoPlist.strings */; };
 		AECB75C7180E1F87003F04F8 /* RPG_SoundmasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */; };
-		AEE37CDD18174E6000798EA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D86FC3FCE33E417E8BD65EC6 /* libPods.a */; };
 		AEE37CDE18174E6000798EA8 /* libPods-RPG-Soundmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57640172A7A545839AD630E3 /* libPods-RPG-Soundmaster.a */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +76,6 @@
 				AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */,
 				AECB7598180E1F86003F04F8 /* Foundation.framework in Frameworks */,
 				AECB759A180E1F86003F04F8 /* CoreGraphics.framework in Frameworks */,
-				AEE37CDD18174E6000798EA8 /* libPods.a in Frameworks */,
 				AEE37CDE18174E6000798EA8 /* libPods-RPG-Soundmaster.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
