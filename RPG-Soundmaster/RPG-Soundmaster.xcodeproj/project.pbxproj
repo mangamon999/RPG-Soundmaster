@@ -25,6 +25,7 @@
 		AECB75C4180E1F87003F04F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AECB75C2180E1F87003F04F8 /* InfoPlist.strings */; };
 		AECB75C7180E1F87003F04F8 /* RPG_SoundmasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */; };
 		AEE37CDE18174E6000798EA8 /* libPods-RPG-Soundmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57640172A7A545839AD630E3 /* libPods-RPG-Soundmaster.a */; };
+		C832911B1830362500ACC281 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C832911A1830362500ACC281 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		AECB75C3180E1F87003F04F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AECB75C5180E1F87003F04F8 /* RPG_SoundmasterTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPG_SoundmasterTests.h; sourceTree = "<group>"; };
 		AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPG_SoundmasterTests.m; sourceTree = "<group>"; };
+		C832911A1830362500ACC281 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D86FC3FCE33E417E8BD65EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C832911B1830362500ACC281 /* AVFoundation.framework in Frameworks */,
 				AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */,
 				AECB7598180E1F86003F04F8 /* Foundation.framework in Frameworks */,
 				AECB759A180E1F86003F04F8 /* CoreGraphics.framework in Frameworks */,
@@ -119,6 +122,7 @@
 		AECB7594180E1F86003F04F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C832911A1830362500ACC281 /* AVFoundation.framework */,
 				AECB7595180E1F86003F04F8 /* UIKit.framework */,
 				AECB7597180E1F86003F04F8 /* Foundation.framework */,
 				AECB7599180E1F86003F04F8 /* CoreGraphics.framework */,

@@ -8,16 +8,18 @@
 
 #import "INPAppDelegate.h"
 
+#import "SCUI.h"
+
 @implementation INPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    
-//    [SCSoundCloud  setClientID:@"<Client ID>"
-//                        secret:@"<Client Secret>"
-//                   redirectURL:[NSURL URLWithString:@"<Redirect URL>"]];
-//    
+
+    [SCSoundCloud  setClientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
+                        secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"
+                   redirectURL:[NSURL URLWithString:@"rpgsoundmaster://oauth"]];
     
+
     // Override point for customization after application launch.
     return YES;
 }

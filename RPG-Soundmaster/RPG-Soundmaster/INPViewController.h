@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface INPViewController : UIViewController
+@interface INPViewController : UITableViewController
 
 @end
