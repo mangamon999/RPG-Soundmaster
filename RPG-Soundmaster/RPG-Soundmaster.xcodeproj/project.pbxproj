@@ -228,6 +228,11 @@
 				CLASSPREFIX = INP;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = INpHELLer;
+				TargetAttributes = {
+					AECB7591180E1F86003F04F8 = {
+						DevelopmentTeam = VSNM6CGZHW;
+					};
+				};
 			};
 			buildConfigurationList = AECB758D180E1F86003F04F8 /* Build configuration list for PBXProject "RPG-Soundmaster" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -463,10 +468,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F914B44EA804C2099585D4A /* Pods-RPG-Soundmaster.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
 				INFOPLIST_FILE = "RPG-Soundmaster/RPG-Soundmaster-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
@@ -476,10 +484,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F914B44EA804C2099585D4A /* Pods-RPG-Soundmaster.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RPG-Soundmaster/RPG-Soundmaster-Prefix.pch";
 				INFOPLIST_FILE = "RPG-Soundmaster/RPG-Soundmaster-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALID_ARCHS = "armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
