@@ -27,6 +27,13 @@
 		AEE37CDE18174E6000798EA8 /* libPods-RPG-Soundmaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57640172A7A545839AD630E3 /* libPods-RPG-Soundmaster.a */; };
 		C832911B1830362500ACC281 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C832911A1830362500ACC281 /* AVFoundation.framework */; };
 		C832911D18304F4500ACC281 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C832911C18304F4500ACC281 /* CoreData.framework */; };
+		C888D3401831B6EA0072434D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C888D33F1831B6EA0072434D /* SystemConfiguration.framework */; };
+		C888D3421831B6FB0072434D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C888D3411831B6FB0072434D /* MobileCoreServices.framework */; };
+		C89111771832EFFC009BE66C /* RPG-Soundmaster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C89111751832EFFC009BE66C /* RPG-Soundmaster.xcdatamodeld */; };
+		C891117A1832F298009BE66C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C89111791832F298009BE66C /* User.m */; };
+		C89111801832F317009BE66C /* User+RKMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = C891117F1832F317009BE66C /* User+RKMapping.m */; };
+		C89111841832F611009BE66C /* INPService.m in Sources */ = {isa = PBXBuildFile; fileRef = C89111831832F611009BE66C /* INPService.m */; };
+		C89111871832F64A009BE66C /* INPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = C89111861832F64A009BE66C /* INPUserService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,17 @@
 		AECB75C6180E1F87003F04F8 /* RPG_SoundmasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPG_SoundmasterTests.m; sourceTree = "<group>"; };
 		C832911A1830362500ACC281 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C832911C18304F4500ACC281 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C888D33F1831B6EA0072434D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C888D3411831B6FB0072434D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C89111761832EFFC009BE66C /* RPG-Soundmaster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "RPG-Soundmaster.xcdatamodel"; sourceTree = "<group>"; };
+		C89111781832F298009BE66C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = Model/User.h; sourceTree = "<group>"; };
+		C89111791832F298009BE66C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = Model/User.m; sourceTree = "<group>"; };
+		C891117E1832F317009BE66C /* User+RKMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+RKMapping.h"; path = "Model/User+RKMapping.h"; sourceTree = "<group>"; };
+		C891117F1832F317009BE66C /* User+RKMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+RKMapping.m"; path = "Model/User+RKMapping.m"; sourceTree = "<group>"; };
+		C89111821832F611009BE66C /* INPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INPService.h; path = Service/INPService.h; sourceTree = "<group>"; };
+		C89111831832F611009BE66C /* INPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INPService.m; path = Service/INPService.m; sourceTree = "<group>"; };
+		C89111851832F64A009BE66C /* INPUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INPUserService.h; path = Service/INPUserService.h; sourceTree = "<group>"; };
+		C89111861832F64A009BE66C /* INPUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INPUserService.m; path = Service/INPUserService.m; sourceTree = "<group>"; };
 		D86FC3FCE33E417E8BD65EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C888D3421831B6FB0072434D /* MobileCoreServices.framework in Frameworks */,
+				C888D3401831B6EA0072434D /* SystemConfiguration.framework in Frameworks */,
 				C832911D18304F4500ACC281 /* CoreData.framework in Frameworks */,
 				C832911B1830362500ACC281 /* AVFoundation.framework in Frameworks */,
 				AECB7596180E1F86003F04F8 /* UIKit.framework in Frameworks */,
@@ -125,6 +145,8 @@
 		AECB7594180E1F86003F04F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C888D3411831B6FB0072434D /* MobileCoreServices.framework */,
+				C888D33F1831B6EA0072434D /* SystemConfiguration.framework */,
 				C832911C18304F4500ACC281 /* CoreData.framework */,
 				C832911A1830362500ACC281 /* AVFoundation.framework */,
 				AECB7595180E1F86003F04F8 /* UIKit.framework */,
@@ -146,6 +168,8 @@
 				AECB75AD180E1F86003F04F8 /* MainStoryboard.storyboard */,
 				AECB75B0180E1F86003F04F8 /* INPViewController.h */,
 				AECB75B1180E1F86003F04F8 /* INPViewController.m */,
+				C89111811832F5E0009BE66C /* Service */,
+				C891117C1832F2C8009BE66C /* Model */,
 				AECB759C180E1F86003F04F8 /* Supporting Files */,
 			);
 			path = "RPG-Soundmaster";
@@ -182,6 +206,45 @@
 				AECB75C2180E1F87003F04F8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C891117B1832F2B5009BE66C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C891117D1832F2E8009BE66C /* Extensions */,
+				C89111781832F298009BE66C /* User.h */,
+				C89111791832F298009BE66C /* User.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		C891117C1832F2C8009BE66C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C891117B1832F2B5009BE66C /* Entities */,
+				C89111751832EFFC009BE66C /* RPG-Soundmaster.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C891117D1832F2E8009BE66C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C891117E1832F317009BE66C /* User+RKMapping.h */,
+				C891117F1832F317009BE66C /* User+RKMapping.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C89111811832F5E0009BE66C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C89111821832F611009BE66C /* INPService.h */,
+				C89111831832F611009BE66C /* INPService.m */,
+				C89111851832F64A009BE66C /* INPUserService.h */,
+				C89111861832F64A009BE66C /* INPUserService.m */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +427,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C891117A1832F298009BE66C /* User.m in Sources */,
 				AECB75A2180E1F86003F04F8 /* main.m in Sources */,
+				C89111871832F64A009BE66C /* INPUserService.m in Sources */,
+				C89111841832F611009BE66C /* INPService.m in Sources */,
+				C89111801832F317009BE66C /* User+RKMapping.m in Sources */,
 				AECB75A6180E1F86003F04F8 /* INPAppDelegate.m in Sources */,
 				AECB75B2180E1F86003F04F8 /* INPViewController.m in Sources */,
+				C89111771832EFFC009BE66C /* RPG-Soundmaster.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +639,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C89111751832EFFC009BE66C /* RPG-Soundmaster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C89111761832EFFC009BE66C /* RPG-Soundmaster.xcdatamodel */,
+			);
+			currentVersion = C89111761832EFFC009BE66C /* RPG-Soundmaster.xcdatamodel */;
+			name = "RPG-Soundmaster.xcdatamodeld";
+			path = "Model/RPG-Soundmaster.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AECB758A180E1F86003F04F8 /* Project object */;
 }

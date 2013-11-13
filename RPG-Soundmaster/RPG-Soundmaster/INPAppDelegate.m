@@ -15,27 +15,26 @@
 #import "RKObjectManager.h"
 #import "RKLog.h"
 
+#import "INPUserService.h"
+
 #import "SCUI.h"
 
 @implementation INPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+//    [SCSoundCloud  setClientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
+//                        secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"
+//                   redirectURL:[NSURL URLWithString:@"rpgsoundmaster://oauth"]];
 
-
-
-    [SCSoundCloud  setClientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
-                        secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"
-                   redirectURL:[NSURL URLWithString:@"rpgsoundmaster://oauth"]];
-
-    NSURL *url = [NSURL URLWithString:@"http://example.com/"];
+    NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com"];
     AFOAuth2Client *oauthClient = [AFOAuth2Client clientWithBaseURL:url
                                                            clientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
                                                              secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"];
 
-    [oauthClient authenticateUsingOAuthWithPath:@"/oauth/token"
-                                       username:@"username"
-                                       password:@"password"
+    [oauthClient authenticateUsingOAuthWithPath:@"/oauth2/token"
+                                       username:@"mangamon999@gmail.com"
+                                       password:@"Mangamon9"
                                           scope:nil
                                         success:^(AFOAuthCredential *credential) {
                                             NSLog(@"I have a token! %@", credential.accessToken);
@@ -44,8 +43,8 @@
                                         failure:^(NSError *error) {
                                             NSLog(@"Error: %@", error);
                                         }];
-
-    [RKObjectManager setSharedManager:[[RKObjectManager alloc] initWithHTTPClient:oauthClient]];
+    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:oauthClient];
+    [RKObjectManager setSharedManager:objectManager];
 
     NSError *error;
 
@@ -56,16 +55,17 @@
         RKLogError(@"Failed to create Application Data Directory at path '%@': %@", RKApplicationDataDirectory(), error);
     }
 
-    NSString *path = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"Store.sqlite"];
+    NSString *path = [RKApplicationDataDirectory() stringByAppendingPathComponent:@"PersitentStore.sqlite"];
     NSPersistentStore *persistentStore = [managedObjectStore addSQLitePersistentStoreAtPath:path fromSeedDatabaseAtPath:nil withConfiguration:nil options:nil error:&error];
     if (!persistentStore) {
         RKLogError(@"Failed adding persistent store at path '%@': %@", path, error);
     }
     [managedObjectStore createManagedObjectContexts];
 
-    RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://restkit.org"]];
-    manager.managedObjectStore = managedObjectStore;
+    objectManager.managedObjectStore = managedObjectStore;
 
+    id me = [INPUserService sharedInstance].me;
+    
     // Override point for customization after application launch.
     return YES;
 }
