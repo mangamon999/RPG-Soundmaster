@@ -9,11 +9,11 @@
 
 #import "INPAppDelegate.h"
 
-#import "AFOAuth2Client.h"
 #import "RKManagedObjectStore.h"
 #import "RKPathUtilities.h"
 #import "RKObjectManager.h"
 #import "RKLog.h"
+#import "INPAuthenticationService.h"
 
 #import "INPUserService.h"
 
@@ -27,23 +27,10 @@
 //                        secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"
 //                   redirectURL:[NSURL URLWithString:@"rpgsoundmaster://oauth"]];
 
-    NSURL *url = [NSURL URLWithString:@"https://api.soundcloud.com"];
-    AFOAuth2Client *oauthClient = [AFOAuth2Client clientWithBaseURL:url
-                                                           clientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
-                                                             secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"];
-
-    [oauthClient authenticateUsingOAuthWithPath:@"/oauth2/token"
-                                       username:@"mangamon999@gmail.com"
-                                       password:@"Mangamon9"
-                                          scope:nil
-                                        success:^(AFOAuthCredential *credential) {
-                                            NSLog(@"I have a token! %@", credential.accessToken);
-                                            [AFOAuthCredential storeCredential:credential withIdentifier:oauthClient.serviceProviderIdentifier];
-                                        }
-                                        failure:^(NSError *error) {
-                                            NSLog(@"Error: %@", error);
-                                        }];
-    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:oauthClient];
+    
+    INPAuthenticationService *authenticationService = [INPAuthenticationService sharedInstance];
+    
+    RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:authenticationService.oauthClient];
     [RKObjectManager setSharedManager:objectManager];
 
     NSError *error;
@@ -64,8 +51,14 @@
 
     objectManager.managedObjectStore = managedObjectStore;
 
-    id me = [INPUserService sharedInstance].me;
-    
+    [authenticationService authenticateWithUserName:@"mangamon999@gmail.com" password:@"Mangamon9" success:^{
+        NSLog(@"YAY!!! Succeeded!");
+        id me = [INPUserService sharedInstance].me;
+        me = me;
+    } failure:^{
+        NSLog(@"OHHH!!! It Failed =(");
+    }];
+
     // Override point for customization after application launch.
     return YES;
 }

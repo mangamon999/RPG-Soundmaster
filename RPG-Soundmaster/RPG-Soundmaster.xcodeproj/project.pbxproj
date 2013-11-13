@@ -34,6 +34,7 @@
 		C89111801832F317009BE66C /* User+RKMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = C891117F1832F317009BE66C /* User+RKMapping.m */; };
 		C89111841832F611009BE66C /* INPService.m in Sources */ = {isa = PBXBuildFile; fileRef = C89111831832F611009BE66C /* INPService.m */; };
 		C89111871832F64A009BE66C /* INPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = C89111861832F64A009BE66C /* INPUserService.m */; };
+		C8A442EB183380E900B623BC /* INPAuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A442EA183380E900B623BC /* INPAuthenticationService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		C89111831832F611009BE66C /* INPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INPService.m; path = Service/INPService.m; sourceTree = "<group>"; };
 		C89111851832F64A009BE66C /* INPUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INPUserService.h; path = Service/INPUserService.h; sourceTree = "<group>"; };
 		C89111861832F64A009BE66C /* INPUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INPUserService.m; path = Service/INPUserService.m; sourceTree = "<group>"; };
+		C8A442E9183380E900B623BC /* INPAuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INPAuthenticationService.h; path = Service/INPAuthenticationService.h; sourceTree = "<group>"; };
+		C8A442EA183380E900B623BC /* INPAuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INPAuthenticationService.m; path = Service/INPAuthenticationService.m; sourceTree = "<group>"; };
 		D86FC3FCE33E417E8BD65EC6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -243,6 +246,8 @@
 				C89111831832F611009BE66C /* INPService.m */,
 				C89111851832F64A009BE66C /* INPUserService.h */,
 				C89111861832F64A009BE66C /* INPUserService.m */,
+				C8A442E9183380E900B623BC /* INPAuthenticationService.h */,
+				C8A442EA183380E900B623BC /* INPAuthenticationService.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -432,6 +437,7 @@
 				C89111871832F64A009BE66C /* INPUserService.m in Sources */,
 				C89111841832F611009BE66C /* INPService.m in Sources */,
 				C89111801832F317009BE66C /* User+RKMapping.m in Sources */,
+				C8A442EB183380E900B623BC /* INPAuthenticationService.m in Sources */,
 				AECB75A6180E1F86003F04F8 /* INPAppDelegate.m in Sources */,
 				AECB75B2180E1F86003F04F8 /* INPViewController.m in Sources */,
 				C89111771832EFFC009BE66C /* RPG-Soundmaster.xcdatamodeld in Sources */,

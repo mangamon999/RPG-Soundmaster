@@ -9,7 +9,7 @@
 #import "INPUserService.h"
 #import "RKResponseDescriptor.h"
 
-#import "AFOAuth2Client.h"
+#import "INPAuthenticationService.h"
 
 #import "User+RKMapping.h"
 
@@ -45,14 +45,14 @@
     return @[[RKRoute routeWithClass:[User class] pathPattern:@"/me.json" method:RKRequestMethodGET]];
 }
 
+- (INPAuthenticationService *)authService {
+    return [INPAuthenticationService sharedInstance];
+}
+
 - (User *)me {
     RKObjectManager *objectManager = self.objectManager;
-    
-    id identifier = [(id)objectManager.HTTPClient serviceProviderIdentifier];
-    
-    AFOAuthCredential *credential = [AFOAuthCredential retrieveCredentialWithIdentifier:identifier];
-    
-    [objectManager getObjectsAtPath:@"/me.json" parameters:@{@"oauth_token":credential.accessToken} success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+
+    [objectManager getObjectsAtPath:@"/me.json" parameters:@{@"oauth_token":self.authService.oauthCredentials.accessToken} success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
         NSLog(@"Loaded object %@", mappingResult.firstObject);
     } failure:^(RKObjectRequestOperation *operation, NSError *error) {
         NSLog(@"Failed to load object with error: %@", error);
@@ -60,5 +60,6 @@
     
     return nil;
 }
+
 
 @end
