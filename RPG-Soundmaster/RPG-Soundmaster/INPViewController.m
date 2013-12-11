@@ -9,7 +9,7 @@
 #import <AVFoundation/AVFoundation.h>
 
 #import "INPViewController.h"
-
+#import "ItemOption.h"
 #import "SCUI.h"
 
 @interface INPViewController ()

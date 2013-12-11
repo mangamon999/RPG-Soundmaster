@@ -23,9 +23,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    [SCSoundCloud  setClientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
-//                        secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"
-//                   redirectURL:[NSURL URLWithString:@"rpgsoundmaster://oauth"]];
+    [SCSoundCloud  setClientID:@"5f2189a6505c3c6c4ef30ed19c27ef92"
+                        secret:@"f71da3a60d1d8be0a6bbbdff10db4c5b"
+                   redirectURL:[NSURL URLWithString:@"rpgsoundmaster://oauth"]];
 
     
     INPAuthenticationService *authenticationService = [INPAuthenticationService sharedInstance];

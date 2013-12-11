@@ -54,6 +54,33 @@
                                         }];
 }
 
+- (void)authenticateWithGoogleUser:(NSString *)userName password:(NSString *)password success:(INPAuthenticationSuccessBlock)successBlock failure:(INPAuthenticationFailureBlock)failureBlock {
+    
+    __weak INPAuthenticationService *weakSelf = self;
+    
+//    NSURL *URLToOpen = [NSURL URLWithString:[NSString stringWithFormat:@"%@/via/facebook?client_id=%@&redirect_uri=%@&display=popup&response_type=code",
+//                                             ,
+//                                             accountConfig[kNXOAuth2AccountStoreConfigurationClientID],
+//                                             accountConfig[kNXOAuth2AccountStoreConfigurationRedirectURL]]];
+    
+//    [self.webView loadRequest:[NSURLRequest requestWithURL:URLToOpen]];
+    
+    [self.oauthClient authenticateUsingOAuthWithPath:@"/oauth2/token"
+                                            code:@"code"
+                                         redirectURI:nil
+                                             success:^(AFOAuthCredential *credential) {
+                                                 
+                                                 NSLog(@"I have a token! %@", credential.accessToken);
+                                                 weakSelf.oauthCredential = credential;
+                                                 Safe(successBlock)();
+                                             }
+                                             failure:^(NSError *error) {
+                                                 
+                                                 NSLog(@"Error: %@", error);
+                                                 Safe(failureBlock)();
+                                             }];
+}
+
 #pragma mark - Public accessor methods
 
 - (AFOAuthCredential *)oauthCredentials {

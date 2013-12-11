@@ -1,0 +1,126 @@
+
+{ //section
+    "id": 0,
+    "title": "NOSFERATU ANTITRIBU",
+    "items": [{ //item
+        "id": 0,
+        "name": "Name",
+        "type": "text",
+        "value": "Pato (João Almeida)",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 1,
+        "name": "Player",
+        "type": "text",
+        "value": "Manga",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 2,
+        "name": "Chronicle",
+        "type": "text",
+        "value": "",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 3,
+        "name": "Nature",
+        "type": "text",
+        "value": "Creep Show",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 4,
+        "name": "Demeanor",
+        "type": "text",
+        "value": "Creep Show",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 5,
+        "name": "Concept",
+        "type": "text",
+        "value": "Leatherface",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 6,
+        "name": "Generation",
+        "type": "selection",
+        "value": 3,
+        "options": [{ //option
+            "id": 0,
+            "value": "15th"
+        }, {
+            "id": 1,
+            "value": "14th"
+        }, {
+            "id": 2,
+            "value": "13th"
+        }, {
+            "id": 3,
+            "value": "12th"
+        }, {
+            "id": 4,
+            "value": "11th"
+        }, {
+            "id": 5,
+            "value": "10th"
+        }, {
+            "id": 6,
+            "value": "9th"
+        }, {
+            "id": 7,
+            "value": "8th"
+        }, {
+            "id": 8,
+            "value": "7th"
+        }, {
+            "id": 9,
+            "value": "6th"
+        }, {
+            "id": 10,
+            "value": "5th"
+        }, {
+            "id": 11,
+            "value": "4th"
+        }, {
+            "id": 12,
+            "value": "3th"
+        }],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 7,
+        "name": "Type",
+        "type": "text",
+        "value": "Leatherface",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }, {
+        "id": 8,
+        "name": "Title",
+        "type": "text",
+        "value": "",
+        "options": [],
+        "min_value": 0,
+        "max_value": 10,
+        "default_value": "0"
+    }]
+}

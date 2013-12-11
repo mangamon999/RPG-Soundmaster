@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="defaultValue" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="maxValue" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="minValue" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="options" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ItemOption" inverseName="item" inverseEntity="ItemOption" syncable="YES"/>
+        <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="items" inverseEntity="Section" syncable="YES"/>
+    </entity>
+    <entity name="ItemOption" representedClassName="ItemOption" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="item" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="options" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="Section" representedClassName="Section" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="section" inverseEntity="Item" syncable="YES"/>
+        <relationship name="parentSection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="subSections" inverseEntity="Section" syncable="YES"/>
+        <relationship name="subSections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="parentSection" inverseEntity="Section" syncable="YES"/>
+    </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
@@ -26,7 +49,11 @@
         <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="websiteTitle" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <fetchRequest name="rootSections" entity="Section" predicateString="parentSection == nil" includePropertyValues="YES"/>
     <elements>
         <element name="User" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ItemOption" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Section" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Item" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
